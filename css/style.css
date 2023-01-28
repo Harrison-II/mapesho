@@ -1,6 +1,8 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
-    --primary: #6244C5;
+    --primary: #bf4040;
     --secondary: #FFFFFF;
     --light: #FAFAFB;
     --dark: #12141D;
@@ -81,10 +83,14 @@
 .navbar.fixed-top {
     display: none;
     transition: .5s;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 60px 15px;
+    padding: 0 15px;
     color: var(--dark);
     font-size: 18px;
     font-weight: 600;
@@ -98,7 +104,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         padding: 10px 0;
     }
 }
@@ -113,6 +119,12 @@
 .typed-cursor {
     font-size: 30px;
     color: var(--dark);
+}
+
+#wish {
+    font-family: 'Pacifico', 'cursive';
+    font-weight: 300;
+    font-size: xx-large;
 }
 
 .btn-play {
@@ -430,54 +442,138 @@
     background: var(--primary);
 }
 
-#heart { 
-    position: absolute;
-    left:50%;
-    width: 100px; 
-    height: 40px;
-    -webkit-transition:all 1s ease;
+/* #heart {
+    margin-left: calc(50% - 50px);
+    margin-top: 0;
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    -webkit-transition: all 1s ease;
     -webkit-animation: latidoslatinosurbanosemergenteshiphophermanobrother 1s infinite;
-  } 
-  #heart:before, #heart:after { 
-    position: absolute; 
-    content: ""; 
-    left: 50px; 
-    top: 0; 
-    width: 50px; 
-    height: 80px; 
-    background: hsl(0,50%,50%); 
-    border-radius: 50px 50px 0 0; 
-    -webkit-transform: rotate(-45deg); 
-    -moz-transform: rotate(-45deg); 
-    -ms-transform: rotate(-45deg); 
-    -o-transform: rotate(-45deg); 
-    transform: rotate(-45deg); 
-    -webkit-transform-origin: 0 100%; 
-    -moz-transform-origin: 0 100%; 
-    -ms-transform-origin: 0 100%; 
-    -o-transform-origin: 0 100%; 
-    transform-origin: 0 100%; 
-  } 
-  #heart:after { 
-    left: 0; 
-    -webkit-transform: rotate(45deg); 
-    -moz-transform: rotate(45deg); 
-    -ms-transform: rotate(45deg); 
-    -o-transform: rotate(45deg); 
-    transform: rotate(45deg); 
-    -webkit-transform-origin: 100% 100%; 
-    -moz-transform-origin: 100% 100%; 
-    -ms-transform-origin: 100% 100%; 
-    -o-transform-origin: 100% 100%; 
-    transform-origin :100% 100%; 
-  } 
-  
-  /* HEARTBEAT ANIMATION BY Mi1o */
-  @-webkit-keyframes latidoslatinosurbanosemergenteshiphophermanobrother {
-    0% { -webkit-transform: scale(1); }
-    8% { -webkit-transform: scale(0.7);  }
-    17% { -webkit-transform: scale(1.5); }
-    25% { -webkit-transform: scale(0.7); }
-    87.5% { -webkit-transform: scale(0.7); }
-    100%  { -webkit-transform: scale(1); }
-  }
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    margin-left: calc(50% - 50px);
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: hsl(0, 50%, 50%);
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+#heart:after {
+    margin-left: calc(50% - 50px);
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+/* HEARTBEAT ANIMATION BY Mi1o */
+@-webkit-keyframes latidoslatinosurbanosemergenteshiphophermanobrother {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    8% {
+        -webkit-transform: scale(0.7);
+    }
+
+    17% {
+        -webkit-transform: scale(1.5);
+    }
+
+    25% {
+        -webkit-transform: scale(0.7);
+    }
+
+    87.5% {
+        -webkit-transform: scale(0.7);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+} */
+
+.typed-text {
+    font-family: 'Pacifico', 'cursive';
+}
+
+.bg_heart {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+ }
+
+.heart {
+    position: absolute;
+    top: -50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -m-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+ }
+
+.heart:before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart:after {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+@keyframes love {
+  0%{top:110%}
+}
