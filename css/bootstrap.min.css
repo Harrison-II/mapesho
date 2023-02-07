@@ -4,6 +4,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -26,7 +29,7 @@
     --bs-danger: #dc3545;
     --bs-light: #FAFAFB;
     --bs-dark: #12141D;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, 'Montserrat', "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
@@ -83,7 +86,8 @@ h6,
     margin-bottom: .5rem;
     font-weight: 600;
     line-height: 1.2;
-    color: #12141D
+    color: #12141D;
+    font-family: 'Montserrat', 'san-serif';
 }
 
 h1,
@@ -114,14 +118,16 @@ h2,
 
 h3,
 .h3 {
-    font-size: calc(1.3rem + .6vw)
+    font-size: calc(1.3rem + .6vw);
+    font-family: 'Montserrat', 'san-serif';
 }
 
 @media (min-width: 1200px) {
 
     h3,
     .h3 {
-        font-size: 1.75rem
+        font-size: 1.75rem;
+        font-family: 'Montserrat', 'san-serif';
     }
 }
 
