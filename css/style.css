@@ -1,6 +1,8 @@
 /********** Template CSS **********/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avor:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
 
 :root {
     --primary: #bf4040;
@@ -15,6 +17,12 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+.letter {
+    font-family: 'Alegreya', 'san-serif';
+    font-size: 20px;
+    padding: 0 30px 0;
 }
 
 .my-6 {
@@ -130,8 +138,7 @@
 
 #subtext {
     font-family: 'Pacifico', 'cursive';
-    font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 100px 0;
 }
 
@@ -537,12 +544,12 @@
 }
 
 #poems {
-    font-family: 'Montserrat', 'san-serif';
+    font-family: 'Alegreya', 'san-serif';
 }
 
 #know {
-    font-family: 'Montserrat', 'san-serif';
+    font-family: 'Alegreya', 'san-serif';
     font-size: 25px;
     font-weight: 500;
-    margin: 0 50px 0;
+    margin: 0 100px 0;
 }
